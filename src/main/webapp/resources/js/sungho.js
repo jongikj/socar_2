@@ -66,7 +66,6 @@ var customer = (function(){
 				}
 			});
 		});
-		
 		$(".faq_lnb > li:nth-child(3)").click(function(){
 			$.ajax({
 				url : app.context() + '/customer/inquiry',

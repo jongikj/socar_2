@@ -17,6 +17,7 @@
 <head>
 	<title><tiles:getAsString name="title"/></title>
 	<link rel="stylesheet" href="${css}/application.css" type="text/css"/>
+	<link rel="stylesheet" href="${css}/bootstrap-datepicker.css" />
 </head>
 <body>
 	<header>

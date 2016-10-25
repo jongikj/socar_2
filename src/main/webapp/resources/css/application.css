@@ -780,7 +780,7 @@ ul.admin_lnb li a.admin_lnb4{background-position:0 -318px;}
 .list .list-header p.select{float:right; padding-top:7px; height:33px;}
 .list .list-header table{width:100%;}
 .list .list-header table th{text-align:center; height:34px; line-height:34px; font-weight:normal; border-top:2px solid #4f555e; border-bottom:1px solid #ededed; background:#f5f5f5;}
-.list .list-header table th a{display:inline-block; padding-right:10px; height:34px; line-height:34px; background:url('/template/asset/images/reservation/ico_open.png') no-repeat right center;}
+.list .list-header table th a{display:inline-block; padding-right:10px; height:34px; line-height:34px; background:url('../img/booking/ico_open.png') no-repeat right center;}
 .list .section{position:relative; height:85px; border-bottom:1px solid #ededed; background-color: white; *zoom:1;}
 .list .section:after{content:""; display:block; clear:both;}
 .list .section .arti{float:left; padding:22px 5px 0 17px; width:150px; text-align: center;}
@@ -1054,3 +1054,59 @@ rental
 .strong {background:#f1fafe}
 #guide_table.cols tbody .first {border-left: 1px solid #ededed;}
  
+/* 실시간예약 추가 김동혁(10.20) */
+/* setting */
+#setting{position:absolute; top:169px; left:13px; width:254px; z-index:10;}
+#setting .setting-box{display:none; position:relative;}
+#setting .setting-box h3{padding:12px 0 0 18px; height:45px; background:url('../img/booking/setting_bg1.png') no-repeat left top;}
+#setting .setting-box .setting-option{background:url('../img/booking/setting_bg2.png') no-repeat left bottom;}
+#setting .setting-box .setting-option .group{margin:0 auto; padding:7px 0; width:244px; border-bottom:1px solid #ececec;}
+#setting .setting-box .setting-option .group table{width:100%;}
+#setting .setting-box .setting-option .group table th{padding:10px 0 10px 10px; width:47px; text-align:left; vertical-align:top;}
+#setting .setting-box .setting-option .group table td{padding:4px 0;}
+#setting .setting-box .setting-option .group label{margin-right:15px;}
+#setting .setting-box .setting-option .group select{height:25px; .height:20px; margin-left: 5px; border:1px solid #b1b1b1; background:#fafafa;}
+#setting .setting-box .setting-option .group .input{height:23px; line-height:23px; border-color:#b1b1b1;}
+#setting .setting-box .setting-option .group .calendar{background:url('../img/booking/ico_open.png') no-repeat 90px 9px;}
+#setting .setting-box .setting-option .group .location{background:url('../img/booking/ico_show.png') no-repeat 160px 7px;}
+#setting .setting-box .setting-option .group .socar{background:url('../img/booking/ico_show.png') no-repeat 160px 7px;}
+#setting .setting-box .setting-option .group .currentPosition{font-size:11px; vertical-align:middle;}
+#setting .setting-box .setting-option .button{height:59px; text-align:center;}
+#setting .ico-desc{margin:5px 0 0 2px;}
+#setting .setting-hidden{position:absolute; top:8px; right:8px;}
+#setting .setting-refresh{position:absolute; top:8px; right:33px;}
+#setting .setting-show{display:none; position:absolute; top:1px; left:1px;}
+#setting.open .setting-box{display:block;}
+
+/* setting option layer */
+.option-layer{display:none; position:absolute; left:199px; border:1px solid #383d43; background:#fff; box-shadow:0 3px 10px rgba(0,0,0,.23); -webkit-box-shadow:0 3px 10px rgba(0,0,0,.23); -moz-box-shadow:0 3px 10px rgba(0,0,0,.23); -ms-box-shadow:0 3px 10px rgba(0,0,0,.23);}
+.option-layer h4{padding-left:13px; border-bottom:1px solid #e6e6e6; background:#fafafa;}
+.option-layer h4 span{display:inline-block; padding-right:12px; height:32px; line-height:34px; color:#333; letter-spacing:-1px; background:url('../img/booking/ico_open.png') no-repeat;}
+.option-layer .i_label{margin-left:4px; line-height:28px;}
+
+/* socarzone */
+#socarzone{top:169px; width:295px;}
+#socarzone .search{padding:10px 0 0 10px; height:37px; border-bottom:1px solid #c9c9c9; background:url('../img/booking/location_search_bg.gif') repeat-x left top;}
+#socarzone .search .input{height:26px; line-height:26px; border-color:#8c8c8c;}
+#socarzone h4 span{color:#0e99dc !important; background-position:108px 14px;}
+#socarzone .result{padding:5px 0 5px 13px; height:168px; line-height:28px; color:#333; overflow-y:auto;}
+#socarzone .result p{padding:5px 0; line-height:18px; color:#333;}
+#socarzone .result li a{line-height:28px; color:#333;}
+#socarzone #autoComplete{display:none; position:absolute; top:37px; left:10px; padding:7px 0; width:273px; height:200px; border:1px solid #383d43; background:#fff; overflow:auto;}
+#socarzone #autoComplete li a{display:block; padding-left:28px; line-height:24px; background:url('../img/booking/ico_location_result.png') no-repeat 8px -45px;}
+#socarzone #autoComplete li a em{color:#0e99dc;}
+#socarzone #autoComplete li.exact a{background-position:8px 3px;}
+
+/* socar */
+#socar{top:214px; width:242px;}
+#socar h4{border-color:#c9c9c9; background:url('../img/booking/location_search_bg.gif') repeat-x left top;}
+#socar h4 span{background-position:54px 14px;}
+#socar .list{margin:0; height:152px; overflow-y:auto;}
+#socar li{border-top:1px solid #eee;}
+
+/* socar */
+#oneway_list {top:214px; width:242px;}
+#oneway_list h4{border-color:#c9c9c9; background:url('../img/booking/location_search_bg.gif') repeat-x left top;}
+#oneway_list h4 span{background-position:54px 14px;}
+#oneway_list .list{margin:0; height:152px; overflow-y:auto;}
+#oneway_list li{border-top:1px solid #eee;}

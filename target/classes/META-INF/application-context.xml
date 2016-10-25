@@ -55,7 +55,7 @@
 		<bean id="dataSourceTransactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
 			<property name="dataSource" ref="dataSource"></property>
 		</bean>
-		<tx:annotation-driven transaction-manager="transactionManager" />
+		<tx:annotation-driven transaction-manager="dataSourceTransactionManager" proxy-target-class="true"/>
 		
 		<!-- Tiles configuration -->
 		<bean id="tilesConfigurer"
